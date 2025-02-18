@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasna' Shofiyyah</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'flex';
+        }
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="menu-btn" onclick="showSection('home')">Home</button>
+        <button class="menu-btn" onclick="showSection('about')">About Me</button>
+        <button class="menu-btn" onclick="showSection('contact')">Contact</button>
+    </div>
+    
+    <div id="home" class="section" style="display: flex;">
+        <div class="container">
+            <div class="profile-img"></div>
+            <div class="title">Hi, I'm Hasna'</div>
+            <div class="subtitle">Seorang Mahasiswa</div>
+        </div>
+    </div>
+    
+    <div id="about" class="section" style="display: flex;">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="about-photo"></div>
+                    <h2>Hasna' Shofiyyah</h2>
+                    <p>Mahasiswa semester 6 program studi Manajemen Informasi Kesehatan, Universitas Gadjah Mada. Seseorang yang cermat dan tepat waktu. Memiliki beberapa pengalaman PKL pada bagian rekam medis.</p>
+                </div>
+            
+                <div class="about-right">
+                    <p><strong>Pendidikan:</strong></p>
+                    <ul>
+                        <li><a href="https://likes.sv.ugm.ac.id/" target="_blank">Universitas Gadjah Mada - Manajemen Informasi Kesehatan (2022 - Saat ini)</a></li>
+                        <li><a href="https://sman1mlati.sch.id/" target="_blank">SMA N 1 Mlati - MIPA (2019-2022)</a></li>
+                    </ul>
+                    <p><strong>Pengalaman PKL:</strong></p>
+                    <ul>
+                        <li>Rumah Sakit Akademik Universitas Gadjah Mada - Praktik Kerja Lapangan (Jan 2025 - Feb 2025)</li>
+                        <li>Puskesmas Mantrijeron - Praktik Kerja Lapangan (Jan 2024 - Feb 2024)</li>
+                        <li>RSUD Nyi Ageng Serang - Praktik Kerja Lapangan (Jun 2023 - Ags 2023)</li>
+                    </ul>
+                    <p><strong>Hobi:</strong></p>
+                    <p>Membaca</p>
+                    <p>Jajan</p>
+                    <p>Bersih-bersih rumah</p>
+                    <p>Journaling</p>
+        
+                    <div class="likes-dislikes-container">
+                        <div class="likes-dislikes">
+                            <h3>Interests</h3>
+                                <p>Buku, Analisis Rekam Medis</p>
+                        </div>
+                        <div class="likes-dislikes">
+                            <h3>Dislikes</h3>
+                            <p>Bangun pagi, Menyetrika, Pete, Jengkol</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-box">
+                <p>Feel free to contact me!</p>
+                <p>Email: <a href="mailto:hasnashofiyyah8@gmail.com">hasnashofiyyah8@gmail.com</a></p>
+                <div class="social">
+                    <a href="https://www.instagram.com/hasnasfy" target="_blank">
+                        <img src="C:\Users\ACER\Documents\Website\Instagram_logo.png" alt="hasnasfy">hasnasfy
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <p><strong>📍 Alamat:</strong> 
+                        <a href="https://maps.app.goo.gl/TUPCedCz7Qdcx7LdA" target="_blank">Minggir, Sleman</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
