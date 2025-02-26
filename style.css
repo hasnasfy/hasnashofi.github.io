@@ -113,10 +113,10 @@ body {
         min-height: auto;
     }
     .about-container {
-        gap: 15px; /* Kurangi jarak antar elemen */
+        gap: 15px;
     }
     .menu-container {
-        top: 10px; /* Posisikan menu lebih dekat */
+        top: 10px;
         right: 10px;
     }
 }
