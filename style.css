@@ -16,6 +16,8 @@ body {
     background: url('foto_jas.jpg') center/cover;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .title {
     font-size: 2em;
