@@ -16,29 +16,22 @@
 </head>
 <body>
     <div class="menu-container">
-        <button class="menu-btn" onclick="showSection('home')">Home</button>
         <button class="menu-btn" onclick="showSection('about')">About Me</button>
         <button class="menu-btn" onclick="showSection('contact')">Contact</button>
     </div>
-    
-    <div id="home" class="section" style="display: flex;">
-        <div class="container">
-            <div class="profile-img"></div>
-            <div class="title">Hi, Saya Hasna'</div>
-            <div class="subtitle">Seorang Mahasiswa</div>
-        </div>
-    </div>
-    
+
     <div id="about" class="section" style="display: flex;">
         <div class="container">
+            <div class="title">Hi, Saya Hasna'</div>
+            <div class="profile-img"></div>
+            
             <div class="about-container">
-                <div class="about-left">
-                    <div class="about-photo"></div>
+                <div class="about-upper">
                     <h2>Hasna' Shofiyyah</h2>
-                    <p>Mahasiswa semester 6 program studi Manajemen Informasi Kesehatan, Universitas Gadjah Mada. Seseorang yang cermat dan tepat waktu. Memiliki beberapa pengalaman PKL pada bagian rekam medis.</p>
+                    <p>Mahasiswa semester 6 program studi Manajemen Informasi Kesehatan, Universitas Gadjah Mada. Tertarik dengan Sistem Informasi Kesehatan, Statistik, Analisis Rekam Medis. Memiliki beberapa pengalaman PKL pada bagian rekam medis.</p>
                 </div>
             
-                <div class="about-right">
+                <div class="about-below">
                     <p><strong>Pendidikan:</strong></p>
                     <ul>
                         <li><a href="https://likes.sv.ugm.ac.id/" target="_blank">Universitas Gadjah Mada - Manajemen Informasi Kesehatan (2022 - Saat ini)</a></li>
@@ -50,22 +43,9 @@
                         <li>Puskesmas Mantrijeron - Praktik Kerja Lapangan (Jan 2024 - Feb 2024)</li>
                         <li>RSUD Nyi Ageng Serang - Praktik Kerja Lapangan (Jun 2023 - Ags 2023)</li>
                     </ul>
-                    <p><strong>Hobi:</strong></p>
-                    <p>Membaca</p>
-                    <p>Jajan</p>
-                    <p>Bersih-bersih rumah</p>
-                    <p>Journaling</p>
-        
-                    <div class="likes-dislikes-container">
-                        <div class="likes-dislikes">
-                            <h3>Interests</h3>
-                                <p>Buku, Analisis Rekam Medis</p>
-                        </div>
-                        <div class="likes-dislikes">
-                            <h3>Dislikes</h3>
-                            <p>Bangun pagi, Menyetrika</p>
-                        </div>
-                    </div>
+                    <p><strong>Publikasi:</strong></p>
+                    <p><p><strong>Publikasi:</strong></p>
+                    <p>Budi, S. C., Yuni Suryaningsih, Caecilia Kayla Selomitha Sigit, Elisa Wahyuningsih, Hasna’ Shofiyyah, Iffah Khoirul Janah, Nadia Dwi Cahyati, & Annisa Maulida Ningtyas. (2024). Outpatient Registration Staff Performance Assessment Model Using Ongoing Professional Practice Evaluation Method. Window of Health : Jurnal Kesehatan, 7(4), 362-371.<a href="https://jurnal.fkmumi.ac.id/index.php/woh/article/view/1252" target="_blank">https://jurnal.fkmumi.ac.id/index.php/woh/article/view/1252</a></p>
                 </div>
             </div>
         </div>
@@ -74,20 +54,40 @@
     <div id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <div class="contact-box">
-                <p>Feel free to contact me!</p>
-                <p>Email: <a href="mailto:hasnashofiyyah8@gmail.com">hasnashofiyyah8@gmail.com</a></p>
+               <div class="form-container">
+                   <p>Feel free to contact me!</p>
+                   <form action="mailto:hasnashofiyyah8@gmail.com" method="post" enctype="text/plain">
+                       Nama<br>
+                       <input type="text" name="nama" value="" size="20" maxlength="20">
+                       <br>
+                       Email:<br>
+                       <input type="text" name="mail" placeholder="" size="20">
+                       <br>
+                       Komentar:<br>
+                       <textarea type="text" name="" rows="4" cols="50"></textarea>
+                       <br>
+                       Tambahan:<br>
+                       <input type="text" name="Tambahan" value="" size="40" readonly>
+                       <br><br>
+                       <input type="submit" value="Send">
+                       <input type="reset" value="Reset">
+                   </form>
+                   <br>
                 <div class="social">
-                    <a href="https://www.instagram.com/hasnasfy" target="_blank">
+                    <a href="https://www.instagram.com/hasnasfy" style="color: white; text-decoration: none;">
                         <img src="C:\Users\ACER\Documents\Website\Instagram_logo.png" alt="hasnasfy">hasnasfy
                     </a>
                 </div>
-                <div class="contact-info">
-                    <p><strong>📍 Alamat:</strong> 
-                        <a href="https://maps.app.goo.gl/TUPCedCz7Qdcx7LdA" target="_blank">Minggir, Sleman</a>
-                    </p>
-                </div>
-            </div>
+        </div>
+
+        <div class="alamat">
+        <div style="margin-top: 20px;">
+            <h3>Alamat</h3>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d313.9535291678756!2d110.27804641708195!3d-7.72634616843385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwNDMnMzQuOSJTIDExMMKwMTYnNDEuNCJF!5e0!3m2!1sid!2sid!4v1740887966791!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
         </div>
     </div>
 </body>
